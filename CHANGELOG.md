@@ -1,3 +1,9 @@
+## v0.0.4
+
+* move tasks into seperate namespaces
+* move rake file into tasks directory
+* remove unused compile_assets helper function
+
 ## v0.0.3
 
 * update task descriptions
