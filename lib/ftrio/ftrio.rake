@@ -1,10 +1,6 @@
 module Ftrio
 
   namespace :ftrio do
-    task :deneme do
-      puts app_name
-    end
-
     desc "Creates feature_branch, dev_branch and feature_app"
     task :create, :feature do |cmd, args|
       feature_branch = args[:feature]
