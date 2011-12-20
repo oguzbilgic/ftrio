@@ -25,7 +25,6 @@ module Ftrio
       feature_branch = current_branch 
       feature_app = feature_app(current_branch)
       sh "git push #{feature_app} #{feature_branch}:master"
-      sh "git remote rm #{feature_app} "
     end
 
     desc "Destroys feature_branch and feature_app"
@@ -35,6 +34,7 @@ module Ftrio
       sh "git checkout master"
       sh "git branch -D #{feature_branch}"
       sh "heroku apps:destroy --app #{feature_app} --confirm #{feature_app}"
+      sh "git remote rm #{feature_app} "
     end
   end
 
