@@ -12,11 +12,7 @@ module Ftrio
     `git branch --no-color | grep '*' | cut -d ' ' -f 2`.chomp
   end
 
-  def self.dev_branch(feature_branch)
-    "dev-#{feature_branch}"
-  end
-
-  def self.dev_app(feature_branch)
+  def self.feature_app(feature_branch)
     "dev-#{app_name}-#{feature_branch}"
   end
 
