@@ -1,7 +1,7 @@
 module Ftrio
 
   namespace :ftrio do
-    desc "Creates feature_branch, dev_branch and feature_app"
+    desc "Creates feature_branch and feature_app"
     task :create, :feature do |cmd, args|
       feature_branch = args[:feature]
       feature_app = feature_app(feature_branch)
@@ -20,7 +20,7 @@ module Ftrio
       puts "\n\n"
     end
 
-    desc "Merges feature_branch into dev_branch and pushes to feature_app"
+    desc "Pushes feature_branch into feature_app"
     task :push do
       feature_branch = current_branch 
       feature_app = feature_app(current_branch)
@@ -28,7 +28,7 @@ module Ftrio
       sh "git remote rm #{feature_app} "
     end
 
-    desc "Destroys feature_branch, dev_branch and feature_app"
+    desc "Destroys feature_branch and feature_app"
     task :destroy do
       feature_branch = current_branch 
       feature_app = feature_app(current_branch)
