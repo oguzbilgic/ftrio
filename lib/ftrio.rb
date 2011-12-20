@@ -13,7 +13,7 @@ module Ftrio
   end
 
   def self.feature_app(feature_branch)
-    "dev-#{app_name}-#{feature_branch}"
+    "#{app_name}--#{feature_branch}"
   end
 
   def self.compile_assets

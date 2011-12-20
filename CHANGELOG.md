@@ -1,3 +1,7 @@
+## v0.0.3
+
+* feature_app name is now "app_name--feature_branch"
+
 ## v0.0.2
 
 * use cedar heroku-stack
