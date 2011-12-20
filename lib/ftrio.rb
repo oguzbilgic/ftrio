@@ -1,3 +1,4 @@
+require "rake"
 require "ftrio/version"
 require "ftrio/railtie" if defined? Rails
 
