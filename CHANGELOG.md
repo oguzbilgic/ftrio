@@ -1,5 +1,7 @@
 ## v0.0.3
 
+* update task descriptions
+* fix ftrio:push task
 * feature_app name is now "app_name--feature_branch"
 
 ## v0.0.2
