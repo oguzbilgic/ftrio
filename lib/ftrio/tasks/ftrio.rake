@@ -46,7 +46,7 @@ module Ftrio
     end
 
     task :create, [:feature] => ["branch:create", "app:create", "app:push", "db:push"]
-
+    task :push => ["app:push"]
     task :destroy => ["app:destroy", "branch:destroy"]
   end
 end
