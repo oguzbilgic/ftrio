@@ -25,16 +25,19 @@ Just add ``` gem 'ftrio' ``` to your GemFile
 ### ftrio:create[feature]
 
 + Creates feature-branch
-+ Creates feature-development-branch for that feature
-+ Compiles assets in feature-development-branch
-+ Commits compiled assets in feature-development-branch
++ Creates compiles-feature-branch for that feature
++ Compiles assets in compiled-feature-branch
++ Commits compiled assets in compiled-feature-branch
 + Creates feature-app just for that feature at heroku
-+ Pushes feature-development-branch into feature-app
++ Pushes compiled-feature-branch into feature-app
 
 ### ftrio:push
 
-Merges feature branch into development branches
++ Compiles feature-branch into compiled-feature-branch
++ Pushes compiled-feature-branct to feature-app
 
 ### ftrio:destroy
 
-Destroyes feature branch
++ Destroyes feature-branch
++ Destroyes compiles-feature-branch
++ Destroyes feature-app
