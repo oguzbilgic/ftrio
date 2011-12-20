@@ -13,10 +13,10 @@ module Ftrio
       sh "heroku db:push --app #{feature_app} --confirm #{feature_app}"
       sh "git checkout #{feature_branch}"
       puts "\n\n"
-      puts "\t#"
-      puts "\t# Your feature development app is ready:"
-      puts "\t# #{feature_app}.heroku.com"
-      puts "\t#"
+      puts "    #"
+      puts "    # Your feature development app is ready:"
+      puts "    # #{feature_app}.heroku.com"
+      puts "    #"
       puts "\n\n"
     end
 
