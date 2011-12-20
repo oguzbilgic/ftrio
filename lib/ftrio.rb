@@ -16,11 +16,4 @@ module Ftrio
   def self.feature_app(feature_branch)
     "#{app_name}--#{feature_branch}"
   end
-
-  def self.compile_assets
-    sh "rake assets:precompile"
-    sh "git add public/assets/*"
-    sh 'git commit -m "Precompile assets"'
-  end
-
 end
